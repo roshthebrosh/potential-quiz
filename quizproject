@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class QuizProject {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		System.out.println("name");
+		String name = in.next();
+		System.out.println("age");
+		String age = in.next();
+		System.out.println("email");
+		String email = in.next();
+		System.out.println("choice of topic");
+		System.out.println(" 1. history\n 2. geography\n 3. Science\n 4. Sports\n");
+		int choice = in.nextInt();
+		if (choice ==1){
+			
+			History h = new History();
+			
+			h.historyQuestions();
+		}
+		if (choice ==2){
+			
+			Geography g = new Geography();
+			
+			g.geoQuestions();
+		}
+		if (choice==3){
+			Science s = new Science();
+			
+			s.scienceQuestions();
+		}
+		
+		if (choice==4){
+			Sports sp = new Sports();
+			sp.sportsQuestions();
+		}
+		
+	/*	System.out.println("Would you like your friend to take a test as well");
+		int again = in.nextInt();
+		if(again ==1){
+			main(args);
+		*/
+		}
+		}
+
+
