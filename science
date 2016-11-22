@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Science {
+	Scanner in = new Scanner(System.in);
+	int counter = 0;
+
+	public void scienceQuestions() {
+		System.out.println("What is the molecular formula of water?");
+		System.out.println("HO");
+		System.out.println("HHO");
+		System.out.println("HHOO");
+		System.out.println("HHHH");
+		int ans1 = in.nextInt();
+		if (ans1 == 2) {
+			System.out.println("correct");
+			counter++;
+		} else
+			System.out.println("Wrong");
+		System.out.println("what is also called the powehouse of a cell?");
+		System.out.println("Cell Wall");
+		System.out.println("Mitochondria");
+		System.out.println("Lysosome");
+		System.out.println("Nucleas");
+		int ans2 = in.nextInt();
+
+		if (ans2 == 2) {
+			System.out.println("Correct");
+			counter++;
+		} else
+			System.out.println("Incorrect");
+		System.out.println("what is the speed of light?");
+		System.out.println("100km/s");
+		System.out.println("300m/s");
+		System.out.println("300000000m/s");
+		System.out.println("1m/s");
+		int ans3 = in.nextInt();
+
+		if (ans3 == 3) {
+			System.out.println("Correct");
+			counter++;
+		} else
+			System.out.println("Incorrect");
+
+		System.out.println("overall score: " + counter);
+	}
+}
