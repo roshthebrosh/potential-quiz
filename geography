@@ -1,0 +1,58 @@
+
+import java.util.Scanner;
+
+public class Geography {
+	Scanner in = new Scanner(System.in);
+	int counter = 0;
+	public void geoQuestions(){
+		System.out.println("How many continents are there");
+		System.out.println("five");
+		System.out.println("six");
+		System.out.println("seven");
+		System.out.println("one");
+		int ans1 = in.nextInt();
+		
+		if(ans1 ==3){
+			System.out.println("Correct");
+			counter++;
+		}
+		else
+			System.out.println("incorrect");
+	    
+		System.out.println("How many oceans are there on Earth?");
+		System.out.println("One");
+		System.out.println("Five");
+		System.out.println("Six");
+		System.out.println("Seven");
+		int ans2 = in.nextInt();
+		
+		if(ans2 ==2){
+			System.out.println("Correct");
+			counter++;
+		}
+		else
+			System.out.println("incorrect");
+		
+		System.out.println("What is the tallest mountain in the World?");
+		System.out.println("Mount Blac");
+		System.out.println("Mount Denali");
+		System.out.println("Mauna Kea");
+		System.out.println("Mount Everest");
+		int ans3 = in.nextInt();
+		
+		
+		if(ans3 ==4){
+			System.out.println("Correct");
+			counter++;
+		}
+		else
+			System.out.println("incorrect");
+		
+	
+		
+		System.out.println("overall score: "+counter);
+		
+		
+	}
+
+}
