@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class History {
+	Scanner in = new Scanner(System.in);
+	int counter = 0;
+
+	public void historyQuestions() {
+		System.out.println("Who is the 1st primeminister of Nepal");
+		System.out.println("Bhimsen Thapa");
+		System.out.println("B.P. Koirala");
+		System.out.println("Hilary Clinton");
+		System.out.println("Prithivi Narayan Shah");
+		int ans1 = in.nextInt();
+
+		if (ans1 == 1) {
+			System.out.println("Correct");
+			counter++;
+		} else
+			System.out.println("incorrect");
+
+		System.out.println("Who found America? ");
+		System.out.println("Michael Jordon");
+		System.out.println("Napolean Bonaparte");
+		System.out.println("Columbus");
+		System.out.println("Washington");
+		int ans2 = in.nextInt();
+
+		if (ans2 == 3) {
+			System.out.println("Correct");
+			counter++;
+		} else
+			System.out.println("incorrect");
+
+		System.out.println("What is the old capital of USA?");
+		System.out.println("San Francisco");
+		System.out.println("Philadelphia");
+		System.out.println("Chicago");
+		System.out.println("New York");
+		int ans3 = in.nextInt();
+
+		if (ans3 == 2) {
+			System.out.println("Correct");
+			counter++;
+		} else
+			System.out.println("incorrect");
+
+		System.out.println("overall score: " + counter);
+
+	}
+
+}
