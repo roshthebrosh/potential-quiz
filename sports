@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Sports {
+int counter =0;
+Scanner in = new Scanner (System.in);
+
+	public void sportsQuestions(){
+		System.out.println("Who won the 2016 world series championship?");
+		System.out.println("Chicago Cubs");
+		System.out.println("San Francisco Giants");
+		System.out.println("Cleaveland Indians");
+		System.out.println("Seattle Mariners");
+		int ans1 = in.nextInt();
+		
+		if (ans1==1){
+			System.out.println("Correct");
+			counter++;
+		}
+		else 
+			System.out.println("Incorrect");
+		
+		System.out.println("How many players in each side play in a game of baseball?");
+		System.out.println("five");
+		System.out.println("Seven");
+		System.out.println("Nine");
+		System.out.println("Eleven");
+		int ans2 = in.nextInt();
+		
+		if (ans2==3){
+			System.out.println("Correct");
+			counter++;
+		}
+		else 
+			System.out.println("Incorrect");
+		System.out.println("Who won the Super Bowl 50 ?");
+		System.out.println("Oakland Raiders");
+		System.out.println("Seattle Seahawks");
+		System.out.println("GoldenState Warriors");
+		System.out.println("Denver Broncos");
+		int ans3 = in.nextInt();
+		
+		if (ans3==4){
+			System.out.println("Correct");
+			counter++;
+		}
+		else 
+			System.out.println("Incorrect");
+		System.out.println("overall score: " + counter);
+	}
+}
